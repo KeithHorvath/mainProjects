@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Raymond's</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="top" style="background-image: url('/assets/images/home/Sandwiches2.png')">
+        <header class="primary-header container group">
+
+            <h1 class="logo">
+                <a href="index.html">Raymond's <br> Sandwiches</a>
+            </h1>
+
+            <h3 class="tagline">Hours 11am - 8pm || Every Day</h3>
+
+            <nav class="nav primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li><!--
+                 --><li><a href="menu.html">Menu</a></li><!--
+                 --><li><a href="loyalty.html">Rewards Program</a></li><!--
+                 --><li><a href="about.html">About Us</a></li><!--
+                 --><li><a href="location.html">Location</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    
+
+        <!--Lead-->
+        <section class="hero container">
+                <h1>MENU</h1>
+                <p>Come with me if you want a sandwich</p>
+        </section>
+    </section>
+    <section id = "menuBody" class="row">
+        <div class="grid">
+            <section class="teaser col-1-3">
+
+                <h2>Customize Your Sandwich</h2>
+
+                <p>Choose 1, 2, or 3 meats, 0-1 cheese, plus any veggies and condiments!</p>
+
+                
+                    <h4>Bread</h4>
+                
+                    <ul class="bread-choice">
+                        <li>White</li>
+                        <li>Wheat</li>
+                        <li>Rye</li>
+                        <li>White Hoagie</li>
+                        <li>Wheat Hoagie</li>
+                        <li>Rye Hoagie</li>
+                    </ul>
+               
+                    <h4>Cheeses</h4>
+                    
+                    <ul class="cheese-choice">
+                        <li>American</li>
+                        <li>Cheddar</li>
+                        <li>Swiss</li>
+                        <li>Mozzarella</li>
+                        <li>Muenster</li>
+                    </ul>
+
+             
+                    <h4>Meats</h4>
+
+                    <ul class="meat-choice">
+                        <li>Turkey</li>
+                        <li>Ham</li>
+                        <li>Salami</li>
+                        <li>Roast Beef</li>
+                        <li>Grilled Chicken</li>
+                        <li>Bacon</li>
+                    </ul>
+                
+                
+                    <h4>Veggies</h4>
+                    
+                    <ul class="veggie-choice">
+                        <li>Lettuce</li>
+                        <li>Spinach</li>
+                        <li>Field Greens</li>
+                        <li>Tomato</li>
+                        <li>Pickle</li>
+                        <li>Red Onion</li>
+                        <li>Pepperoncini</li>
+                        <li>Black Olives</li>
+                    </ul>
+        
+                    <h4>Condiments</h4>
+                    
+                    <ul class="con-choice">
+                        <li>House Dressing</li>
+                        <li>Mayo</li>
+                        <li>Yellow Mustard</li>
+                        <li>Spicy Brown Mustard</li>
+                        <li>BBQ</li>
+                        <li>Thousand Island Dressing</li>
+                        <li>Home-Made Tzatziki</li>
+                        <li>Red Wine Vinegar</li>
+                        <li>Olive Oil</li>
+                        <li>Salt</li>
+                        <li>Crushed Black Pepper</li>
+                    </ul>
+            </section>
+            <!-- 
+
+          -->
+            <form class="teaser col-1-3" action="#" method="post">
+
+                <fieldset class="register-group">
+                    <label>
+                        Name
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </label>
+
+                    <label>
+                        Phone Number
+                        <input type="phone" name="phone" placeholder="###-###-####" required>
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </label>
+
+                    <label>
+                        BREAD
+                        <select name="quantity" required>
+                            <option value="1" >White</option>
+                            <option value="2">Wheat</option>
+                            <option value="3">Rye</option>
+                            <option value="4">White Hoagie</option>
+                            <option value="5">Wheat Hoagie</option>
+                            <option value="5">Rye Hoagie</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        CHEESES
+                        <select name="quantity" required>
+                            <option value="1" >American</option>
+                            <option value="2">Cheddar</option>
+                            <option value="3">Swiss</option>
+                            <option value="4">Mozzarella</option>
+                            <option value="5">Muenster</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <h4>MEATS</h4>
+                        <form action="" method="post">
+                            <label>Turkey</label>
+                                <input type="checkbox" name="Turkey" value="Turkey" />
+                            <label>Ham</label>
+                                <input type="checkbox" name="Ham" value="Ham" />
+                            <label>Salami</label>
+                                <input type="checkbox" name="Salami" value="Salami" />
+                            <label>Roast Beef</label>
+                                <input type="checkbox" name="Roast Beef" value="Roast Beef" /> 
+                            <label>Grilled Chicken</label>
+                                <input type="checkbox" name="Grilled Chicken" value="Grilled Chicken" /> 
+                            <label>Bacon</label>
+                                <input type="checkbox" name="Bacon" value="Bacon" /> 
+                        </form>
+                    </label>
+
+                    <label>
+                        <h4>VEGGIES</h4>
+                        <form action="" method="post">
+                            <label>Lettuce</label>
+                            <input type="checkbox" name="Lettuce" value="Lettuce" />
+                            <label>Spinach</label>
+                            <input type="checkbox" name="Spinach" value="Spinach" />
+                            <label>Field Greens</label>
+                            <input type="checkbox" name="Field Greens" value="Field Greens" />
+                            <label>Tomato</label>
+                            <input type="checkbox" name="Tomato" value="Tomato" />
+                            <label>Pickle</label>
+                            <input type="checkbox" name="Pickle" value="Pickle" />
+                            <label>Red Onion</label>
+                            <input type="checkbox" name="Red Onion" value="Red Onion" />
+                            <label>Pepperonini</label>
+                            <input type="checkbox" name="Pepperonini" value="Pepperonini" />
+                            <label>Black Olives</label>
+                            <input type="checkbox" name="Black Olives" value="Black Olives" />
+                        </form>
+                    </label>
+
+                    <label>
+                        <h4>CONDIMENTS</h4>
+                        <form action="" method="post">
+                            <label>House Dressing</label>
+                            <input type="checkbox" name="House Dressing" value="House Dressing" />
+                            <label>Mayo</label>
+                            <input type="checkbox" name="Mayo" value="Mayo" />
+                            <label>Yellow Mustard</label>
+                            <input type="checkbox" name="Yellow Mustard" value="Yellow Mustard" />
+                            <label>Spicy Brown Mustard</label>
+                            <input type="checkbox" name="Spicy Brown Mustard" value="Spicy Brown Mustard" />
+                            <label>BBQ</label>
+                            <input type="checkbox" name="BBQ" value="BBQ" />
+                            <label>Thousand Island Dressing</label>
+                            <input type="checkbox" name="Thousand Island Dressing" value="Thousand Island Dressing" />
+                            <label>Home-Made Tzatziki</label>
+                            <input type="checkbox" name="Home-Made Tzatziki" value="Home-Made Tzatziki" />
+                            <label>Red Wine Vinegar</label>
+                            <input type="checkbox" name="Red Wine Vinegar" value="Red Wine Vinegar" />
+                            <label>Olive Oil</label>
+                            <input type="checkbox" name="Olive Oil" value="Olive Oil" />
+                            <label>Salt</label>
+                            <input type="checkbox" name="Salt" value="Salt" />
+                            <label>Crushed Black Pepper</label>
+                            <input type="checkbox" name="Crushed Black Pepper" value="Crushed Black Pepper" />
+                        </form>
+                    </label>
+
+
+                    <label>
+                        COMMENTS/REQUESTS
+                        <textarea name="comments"></textarea>
+                    </label>
+
+                    <input id="btn" class="btn-default" type="submit" name="submit" value="Place Order">
+
+                </fieldset class="register-group">
+
+                
+
+            </form>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="primary-footer container group">
+        <small>&copy; Keith Horvath || Templated</small>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li><!--
+             --><li><a href="menu.html">Menu</a></li><!--
+             --><li><a href="loyalty.html">Rewards Program</a></li><!--
+             --><li><a href="about.html">About Us</a></li><!--
+             --><li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+</body>
+
+</html>
