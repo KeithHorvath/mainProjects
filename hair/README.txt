@@ -1,3 +1,3 @@
-Sunset Salon: http://sunsetsalon.netlify.app
+Sunset Salon: https://sunsetsalon.netlify.app
 
 	
