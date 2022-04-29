@@ -1,4 +1,5 @@
 # mainProjects
 
-Raymond's Sandwiches: http://raymondssandwiches.netlify.app
+Raymond's Sandwiches: https://raymondssandwiches.netlify.app
+Sunset Salon: https://sunsetsalon.netlify.app
 
