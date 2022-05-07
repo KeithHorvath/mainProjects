@@ -1,0 +1,267 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  padding: 50px;
+  margin: 0;
+  background-image: url(/css/Images/spaceBackground2.png);
+  background-repeat: no-repeat;
+  background-size: 200vh;
+  color: white;
+}
+
+
+header>div{
+  margin: 0 15px;
+}
+
+.allButtons{
+  display: flex;
+  justify-content: center;
+}
+
+.collapsible{
+  background-image: linear-gradient(0deg, #03214a, #0a0612);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  color:aliceblue;
+  cursor: pointer;
+  padding: 20px;
+  width: 170px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2rem;
+  flex: 1;
+}
+
+.active, .collapsible:hover{
+  background: linear-gradient(0deg, #03214a, #0a0612);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 170px;
+  text-decoration: underline;
+  color: white;
+}
+
+.collapsible:active{
+  background: linear-gradient(to right, plum, lightblue);
+  color: black;
+  width: 170px;
+}
+
+#topCollapsible{
+ margin: 0 20px 10px 0px;
+ float: left;
+ 
+ 
+}
+
+.search{
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+}
+
+h1{
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 2rem;
+}
+
+
+h1, p, img, h2, h3{
+  text-align: center;
+}
+
+
+.input{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+  width: auto;
+}
+
+div>.mainContent{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  border: none;
+  width: 100%;
+}
+
+
+h3{
+  text-align: center;
+  font-size: 1.75rem;
+  padding: 40px 0 0 10px;
+  
+}
+
+input{
+  background: lightgray;
+  font-size: 2rem;
+}
+
+button{
+  color: black;
+  background-color: lightgray;
+  font-size: 1.5rem;
+}
+
+button:hover{
+  background: linear-gradient(to left, purple, blue);
+  color: white;
+}
+
+button:active{
+  background: linear-gradient(to right, plum, lightblue);
+  color: black;
+}
+
+.mainContent{
+  width: 100%;
+}
+
+.content{
+    width: 100%;
+  }
+
+
+#name{
+  text-align: center;
+}
+
+.content>div{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  margin: 0;
+  max-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+img{
+  max-width: 60vh;
+}
+
+.hideMe{
+  display:none;
+}
+
+footer{
+  padding-top: 150px;
+  padding-bottom: 0;
+  margin-bottom:-25px;
+}
+
+footer a{
+  color: white;
+}
+
+footer a:hover{
+  color:lightblue;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+footer a:active{
+  color:aqua;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (min-width: 768px){
+
+  .mainContent{
+    display: flex;
+  }
+  
+  #name{
+    text-align: left;
+  }
+
+  .content>div{
+    display:block;
+  }
+
+  .content, .content+div{
+    flex: 1;
+  }
+
+  img{
+    width: 50vh;
+  }
+
+  h3{
+    float: right;
+    text-align: left;
+    padding-top: 75px;
+    margin-left: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px){
+
+  .mainContent{
+    display: flex;
+  }
+  
+  #name{
+    text-align: left;
+  }
+
+  .content>div{
+    display:block;
+  }
+
+  .content, .content+div{
+    flex: 1;
+  }
+
+  img{
+    width: 90vh;
+  }
+
+  h3{
+    float: right;
+    text-align: left;
+    padding-top: 75px;
+    margin-left: 0;
+  }
+
+}

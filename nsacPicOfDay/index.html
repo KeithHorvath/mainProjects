@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="astronomy club" content="Search NASA's database for pics of the day!">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Night Sky Astronomy Club</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Night Sky Astronomy Club: Picture of the Day</h1>
+		</header>
+		
+		<div>
+			<div class="allButtons">
+				<div id= "topCollapsible">
+					<button type="collapsible" class="collapsible">+ About</button>
+					<div class="search">
+						<h2>What's This All About?</h2>
+						<p>NASA has a catalogued picture of the day. You can search and display that image for any day within the range provided, and every once in a while you'll even come across a video! How cool!</p>
+						<p>Follow the instructions in the "Search a Date" section for proper date format, and soon you'll have access to thousands of NASA images at the click of a button!</p>
+					</div>
+				</div>
+				<div>
+					<button type = "collapsible" class="collapsible">+ Search a Date</button>
+					<div class="search">
+						<h2>Which Date Would You Like to See?</h2>
+						<p>(date must be after June 16, 1995)</p>
+						<div class="input">
+							<input type="date" name="" value="">
+							<button type="button" name="button" id="searchButton">Search</button>
+							<button input type="reset" value="reset" onClick="window.location.reload()">Reset</button>
+						</div>
+						<p>*If video/image doesn't load, either hit the "reset" button or reload the page and enter the date again*</p>
+					</div>
+				</div>
+				
+			</div>
+			<div class = "mainContent">
+				<div class="content">
+					<div>
+						<h2 id="name"></h2>
+						<img src="" alt="">
+						<iframe width="450" height="345" src="" frameBorder = "0" id="vid"></iframe>
+					</div>
+				</div>
+				<div>
+					<h3></h3>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<p> <a target="_blank" href="https://keithhorvath.netlify.app"> &copy; Keith Horvath</a></p>
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
