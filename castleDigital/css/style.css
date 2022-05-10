@@ -1,0 +1,1101 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+     font-size: 62.5%;
+     padding: 0;
+     margin: 0;
+     overflow-x: hidden;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-color: #3B739E;
+     font-family: "Marmelad", Sans-Serif;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/************************
+/* HEADER
+/************************/
+header {
+     display: flex;
+     width: 100vw;
+     height: 160px;
+     background-color: rgba(64, 158, 151);
+
+}
+
+header img{
+     width: 400px;
+     height: 160px;
+     margin-right: 3rem;
+}
+
+.topNav{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding-right: 1.55rem;
+     width: 75%;
+}
+
+.topNav a{
+     text-decoration: none;
+     color: #fff;
+     font-size: 2.5rem;
+     padding: -.5rem;
+}
+
+.topNav a:hover{
+     text-decoration: underline;
+}
+
+#dropMenu{
+     display: none;
+}
+
+/************************
+/* FIRST SECTION
+/************************/
+#firstSection{
+     display: flex;
+     background-image: url('/css/img/mainSection.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 75vh;
+     max-width: 100%;
+}
+
+.yourStory{
+     display: flex;
+     flex-direction: column;
+     margin: 10% auto 60% auto;
+     height: 30%;
+     width: 65%;
+     border-radius: 10px;
+     background-color: rgba(79, 189, 183,.9)
+}
+
+h1{
+     text-align: center;
+     color: #fff;
+     font-size: 3.5rem;
+     text-decoration:underline;
+     padding: 1rem 0;
+     font-weight: 300;
+}
+
+.consultButton{
+     width: 250px;
+     height: 35px;
+     border-radius: 15px;
+     border: 1px solid white;
+     margin: 0 auto;
+     background: rgba(255,255,255,0);
+     color: #fff;
+     font-size: 1.75rem;
+     font-weight: 300;
+
+}
+
+.consultButton:hover{
+     background-color: #3B9E67;
+     border: 1px solid #3B9E67;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/************************
+/* QUOTE DIV
+/************************/
+
+.quote{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 210px;
+     width: 100%;
+     background-color: #3B9E98;
+}
+
+.quote p, .quote span{
+     color: #fff;
+     font-size: 3rem;
+}
+
+.quote p {
+     text-align: center;
+     width: 70%;
+     margin: 0 0 .5rem 0;
+}
+
+
+/************************
+/* MAIN SECTION
+/************************/
+
+main{
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 2rem;
+}
+
+
+main h2{
+     align-items: center;
+     text-align: center;
+     color: #fff;
+     font-size: 4rem;
+     margin-top: 50px;
+}
+
+.mainContent{
+     display:flex;
+     flex-direction: row;
+     margin: 40px 0;
+    
+}
+
+.mainContent div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     width: 70%;
+     margin: 0 auto;
+}
+
+.mainContent div img{
+     width: 325px;
+     height: 217px;
+     border-radius: 5px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainContent div button{
+     height: 66px;
+     width: 325px;
+     color: #fff;
+     font-size: 2rem;
+     margin: 10px auto;
+     background-color: #4FBDB7;
+     border: 1px solid #fff;
+     border-radius: 10px;
+
+}
+
+.mainContent div button:hover{
+     background-color: #3B9E67;
+     border: 1px solid #3B9E67;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/************************
+/* FOOTER
+/************************/
+footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     background-color: #3B9E98;
+     height: 200px;
+     width: 100%;
+
+}
+
+.navArea{
+     display: flex;
+     flex-direction: column;
+     padding-left: 2.5rem;
+     height: 100%;
+}
+
+.navArea>span{
+     font-size: 2.5rem;
+     color: #fff;
+     text-decoration: underline;
+     margin: 2.5rem 0 2rem 0;
+}
+
+#bottomNav{
+     display: flex;
+     flex-direction: row;
+}
+
+.navLeft{
+     display: flex;
+     flex-direction: column;
+     margin-right: 2rem;
+}
+
+.navRight{
+     display: flex;
+     flex-direction: column;
+     padding-left: 3rem;
+}
+
+#bottomNav a{
+     text-decoration: none;
+     color: #fff;
+     font-size: 1.5rem;
+     margin-bottom: 1.75rem;
+}
+
+#bottomNav a:hover{
+     text-decoration: underline;
+}
+
+.socials{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center;
+}
+
+.socials h3{
+     color: #fff;
+     font-size: 3.5rem;
+     margin: 2.5rem 0 2rem 0;
+}
+
+.socials p{
+     justify-content: flex-end;
+     color: #fff;
+     font-size: 1.5rem;
+}
+
+.icons{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     margin-bottom: 2rem;
+}
+
+.icons img{
+     height: 44px;
+     width: 44px;
+     margin-right: 2rem;
+}
+
+.icons img:hover{
+     border: 1px solid white;
+     border-radius: 25px;
+}
+
+footer img{
+     align-items:flex-end;
+     width: 200px;
+     height: 200px;
+}
+
+
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (max-width: 1000px){
+     /*********
+     /* HEADER
+     /*********/
+     
+     header {
+     height: 150px;
+     }
+
+     header img{
+     width: 390px;
+     height: 150px;
+     margin-right: 2.5rem;
+     }
+
+     .topNav{
+     padding-right: 1.5rem;
+     }
+
+     .topNav a{
+     text-decoration: none;
+     color: #fff;
+     font-size: 2rem;
+     padding: -.5rem;
+     }
+
+
+     /*****************
+     /* FIRST SECTION
+     /*****************/
+     #firstSection{
+     height: 70vh;
+     }
+
+     .yourStory{
+     height: 27%;
+     width: 55%;
+     }
+
+     h1{
+     text-align: center;
+     color: #fff;
+     font-size: 3rem;
+     text-decoration:underline;
+     padding: 1rem 0;
+     font-weight: 300;
+     }
+
+     .consultButton{
+     width: 200px;
+     height: 30px;
+     font-size: 1.5rem;
+     }
+
+
+     /************
+     /* QUOTE DIV
+     /************/
+
+     .quote{
+     height: 190px;
+     width: 100%;
+     }
+
+     .quote p, .quote span{
+     color: #fff;
+     font-size: 2.25rem;
+     }
+
+
+     /***************
+     /* MAIN SECTION
+     /***************/
+
+     main{
+     padding-bottom: 1.75rem;
+     }
+
+
+     main h2{
+     font-size: 3.5rem;
+     margin-top: 50px;
+     }
+
+     .mainContent{
+     margin: 30px 0;
+     }
+
+     .mainContent div img{
+     width: 300px;
+     height: 200px;
+     }
+
+     .mainContent div button{
+     height: 55px;
+     width: 300px;
+     font-size: 1.75rem;
+     }
+
+
+     /**********
+     /* FOOTER
+     /**********/
+     footer {
+     height: 175px;
+     width: 100%;
+     }
+
+     .navArea{
+     padding-left: 2.25rem;
+     height: 100%;
+     }
+
+     .navArea>span{
+     font-size: 2rem;
+     margin: 2.5rem 0 2rem 0;
+     }
+     
+     .navLeft{ 
+     margin-right: 1.75rem;
+     }
+
+     .navRight{
+     padding-left: 3rem;
+     }
+
+     #bottomNav a{
+     font-size: 1.25rem;
+     }
+
+     .socials h3{
+     font-size: 3rem;
+     margin: 2.5rem 0 2rem 0;
+     }
+
+     .socials p{
+     font-size: 1.25rem;
+     }
+
+     .icons{
+     margin-bottom: 1.5rem;
+     }
+
+     .icons img{
+     height: 40px;
+     width: 40px;
+     }
+
+     footer img{
+     width: 175px;
+     height: 175px;
+     }
+
+}
+
+
+
+/******************************************
+/* 2nd MEDIA
+/******************/
+
+@media screen and (max-width: 850px){
+     /*********
+     /* HEADER
+     /*********/
+     
+     header {
+     height: 110px;
+     }
+
+     header img{
+     width: 350px;
+     height: 110px;
+     margin-right: 2rem;
+     }
+
+     .topNav{
+     padding-right: 1rem;
+     }
+
+     .topNav a{
+     font-size: 1.5rem;
+     padding: -.25rem;
+     }
+
+
+     /*****************
+     /* FIRST SECTION
+     /*****************/
+     #firstSection{
+     height: 60vh;
+     }
+
+     .yourStory{
+     height: 27%;
+     width: 50%;
+     }
+
+     h1{
+     font-size: 2.5rem;
+     padding: 1rem 0;
+     }
+
+     .consultButton{
+     width: 175px;
+     height: 25px;
+     font-size: 1.25rem;
+     }
+
+
+     /************
+     /* QUOTE DIV
+     /************/
+
+     .quote{
+     height: 160px;
+     width: 100%;
+     }
+
+     .quote p, .quote span{
+     color: #fff;
+     font-size: 2rem;
+     }
+
+
+     /***************
+     /* MAIN SECTION
+     /***************/
+
+     main{
+     padding-bottom: 1.25rem;
+     }
+
+
+     main h2{
+     font-size: 3rem;
+     margin-top: 45px;
+     }
+
+     .mainContent{
+     margin: 30px 0;
+     }
+
+     .mainContent div img{
+     width: 250px;
+     height: 175px;
+     }
+
+     .mainContent div button{
+     height: 50px;
+     width: 250px;
+     font-size: 1.5rem;
+     }
+
+
+     /**********
+     /* FOOTER
+     /**********/
+     footer {
+     height: 150px;
+     width: 100%;
+     }
+
+     .navArea{
+     padding-left: 2.25rem;
+     height: 100%;
+     }
+
+     .navArea>span{
+     font-size: 2rem;
+     margin: 2rem 0 .75rem 0;
+     }
+     
+
+     #bottomNav a{
+     font-size: 1.25rem;
+     }
+
+     .socials h3{
+     font-size: 2.5rem;
+     margin: 2.5rem 0 2rem 0;
+     }
+
+     .socials p{
+     font-size: 1rem;
+     }
+
+     .icons{
+     margin-bottom: 1.5rem;
+     }
+
+     .icons img{
+     height: 35px;
+     width: 35px;
+     }
+
+     footer img{
+     width: 150px;
+     height: 150px;
+     }
+
+}
+
+
+
+
+/******************
+/* 3rd MEDIA
+/******************/
+
+@media screen and (max-width: 665px){
+     /*********
+     /* HEADER
+     /*********/
+     
+     header {
+     height: auto;
+     }
+
+     header img{
+     width: 350px;
+     height: 110px;
+     margin-right: 2rem;
+     }
+
+     #fullMenu{
+     display: none;
+     }
+
+     #dropMenu{
+     display:flex;
+     justify-content: flex-end;
+     }
+
+     .dropdown{
+     float: right;
+     overflow: hidden;
+     background-color:#3B739E;
+     }
+
+     .dropbtn{
+     color: white;
+     font-size: 4rem;
+     text-align:left;
+     margin-right: 1rem;
+     }
+
+     .dropdown .dropbtn {
+     border: none;
+     outline: none;
+     padding: 14px 16px;
+     background-color: inherit;
+     font-family: inherit;
+     margin: 0;
+     }
+
+     .navbar a:hover, .dropdown:hover .dropbtn {
+     background-color:#4FBDB7;
+     }
+
+     .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color:#3B739E;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+     margin-left: -117px;
+     }
+
+     .dropdown-content a {
+     float: none;
+     color: white;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: right;
+     font-size: 2rem;
+     }
+
+     .dropdown-content a:hover {
+     background-color:#3B9E67;
+     }
+
+     .dropdown:hover .dropdown-content {
+     display: block;
+     }
+
+
+     /*****************
+     /* FIRST SECTION
+     /*****************/
+     #firstSection{
+     height: 50vh;
+     }
+
+     .yourStory{
+     height: fit-content;
+     width: 60%;
+     padding-bottom: 2rem;
+     }
+
+     h1{
+     font-size: 3rem;
+     padding: 1rem 0;
+     }
+
+     .consultButton{
+     width: 175px;
+     height: 25px;
+     font-size: 1.5rem;
+     }
+
+
+     /************
+     /* QUOTE DIV
+     /************/
+
+     .quote{
+     height: 160px;
+     width: 100%;
+     }
+
+     .quote p, .quote span{
+     color: #fff;
+     font-size: 2.5rem;
+     }
+
+
+     /***************
+     /* MAIN SECTION
+     /***************/
+
+     main{
+     padding-bottom: 1.25rem;
+     }
+
+
+     main h2{
+     font-size: 5rem;
+     margin-top: 40px;
+     margin-bottom: -10px;
+     }
+
+     .mainContent{
+     margin: 30px 0;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
+     }
+
+     .mainContent+h2{
+     margin-top: 0px;
+     }
+
+     .mainContent>div{
+     margin-bottom: 25px;
+     }
+
+     .mainContent div img{
+     width: 375px;
+     height: 264px;
+     }
+
+     .mainContent div button{
+     height: 70px;
+     width: 375px;
+     font-size: 2rem;
+     margin: 10px auto;
+     }
+
+
+     /**********
+     /* FOOTER
+     /**********/
+     footer {
+     height: fit-content;
+     width: 100%;
+     }
+
+     .navArea{
+     padding-left: 2.5rem;
+     height: 100%;
+     }
+
+     .navArea>span{
+     font-size: 3rem;
+     margin: 2.5rem 0 1.5rem 0;
+     }
+     
+     .navLeft{ 
+     margin-right: 1.25rem;
+     }
+
+     .navRight{
+     padding-left: 1.25rem;
+     }
+
+     #bottomNav a{
+     font-size: 1.5rem;
+     }
+
+     .socials h3{
+     font-size: 2.5rem;
+     margin: 1.25rem 0 0 0;
+     }
+
+     .socials p{
+     font-size: 1.5rem;
+     text-align: center;
+     }
+
+     .icons{
+     margin-top: -1.5rem;
+     margin-bottom: 1.5rem;
+     }
+
+     .icons img{
+     height: 40px;
+     width: 40px;
+     margin-right: 5px;
+     }
+
+     footer img{
+     width: 100px;
+     height: 100px;
+     margin-top: 50px;
+     margin-right: 1.5rem;
+     border-radius: 5px;
+     }
+
+}
+
+
+
+
+
+/******************
+/* MOBILE 
+/******************/
+
+@media screen and (max-width: 480px), screen and (orientation:portrait) {
+     /*********
+     /* HEADER
+     /*********/
+     
+     header {
+     height: auto;
+     }
+
+     header img{
+     width: 80%;
+     height: 210px;
+     }
+
+     #fullMenu{
+     display: none;
+     }
+
+     #dropMenu{
+     display:flex;
+     justify-content: flex-end;
+     }
+
+     .dropdown{
+     float: right;
+     overflow: hidden;
+     background-color:#3B739E;
+     }
+
+     .dropbtn{
+     color: white;
+     font-size: 4rem;
+     text-align:left;
+     margin-right: 1rem;
+     }
+
+     .dropdown .dropbtn {
+     border: none;
+     outline: none;
+     padding: 14px 16px;
+     background-color: inherit;
+     font-family: inherit;
+     margin: 0;
+     }
+
+     .navbar a:hover, .dropdown:hover .dropbtn {
+     background-color:#4FBDB7;
+     }
+
+     .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color:#3B739E;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+     margin-left: -107px;
+     }
+
+     .dropdown-content a {
+     float: none;
+     color: white;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: right;
+     font-size: 3rem;
+     }
+
+     .dropdown-content a:hover {
+     background-color:#3B9E67;
+     }
+
+     .dropdown:hover .dropdown-content {
+     display: block;
+     }
+
+
+     /*****************
+     /* FIRST SECTION
+     /*****************/
+     #firstSection{
+     height: 50vh;
+     }
+
+     .yourStory{
+     height: fit-content;
+     width: 60%;
+     padding-bottom: 2rem;
+     }
+
+     h1{
+     font-size: 5rem;
+     padding: 1rem 0;
+     }
+
+     .consultButton{
+     width: fit-content;
+     height: fit-content;
+     font-size: 2.5rem;
+     padding: .5rem 1rem;
+     }
+
+
+     /************
+     /* QUOTE DIV
+     /************/
+
+     .quote{
+     height: fit-content;
+     width: 100%;
+     padding: 2rem;
+     }
+
+     .quote p{
+     width: 80%;
+     }
+
+     .quote p, .quote span{
+     color: #fff;
+     font-size: 4rem;
+     }
+
+
+     /***************
+     /* MAIN SECTION
+     /***************/
+
+     main{
+     padding-bottom: 1.25rem;
+     }
+
+
+     main h2{
+     font-size: 6rem;
+     margin-top: 40px;
+     margin-bottom: -10px;
+     }
+
+     .mainContent{
+     margin: 30px 0;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
+     }
+
+     .mainContent+h2{
+     margin-top: 0px;
+     }
+
+     .mainContent>div{
+     margin-bottom: 25px;
+     width: 100%;
+     }
+
+     .mainContent div img{
+     width: 425px;
+     height: 290px;
+     margin-left: auto;
+     margin-right: auto;
+     }
+
+     .mainContent div button{
+     height: fit-content;
+     width: 425px;
+     font-size: 3rem;
+     margin: 10px auto;
+     padding: 10px;
+     }
+
+
+     /**********
+     /* FOOTER
+     /**********/
+     footer {
+     height: fit-content;
+     width: 100%;
+     }
+
+     .navArea{
+     padding-left: 2rem;
+     height: 100%;
+     }
+
+     .navArea>span{
+     font-size: 3rem;
+     margin: 2.5rem 0 1.5rem 0;
+     }
+     
+     .navLeft{ 
+     margin-right: 1.25rem;
+     }
+
+     .navRight{
+     padding-left: 1rem;
+     margin-right: 1rem;
+     }
+
+     #bottomNav a{
+     font-size: 2rem;
+     }
+
+     .socials h3{
+     font-size: 3rem;
+     margin: 3rem auto 0 auto;
+     }
+
+     .socials p{
+     font-size: 1rem;
+     text-align: center;
+     }
+
+     .icons{
+     margin-top: -1.5rem;
+     margin-bottom: 1.5rem;
+     flex-wrap:wrap;
+     }
+
+     .icons img{
+     height: 70px;
+     width: 70px;
+     margin-right: 15px;
+     }
+
+     .icons img:hover{
+          border-radius: 50px;
+     }
+
+     footer img{
+     width: 100px;
+     height: 100px;
+     margin-top: 50px;
+     margin-right: 1.5rem;
+     border-radius: 5px;
+     }
+
+}
